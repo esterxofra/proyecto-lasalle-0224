@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Salle 2024</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>This is a Heading H1</h1>
+
+    <p>This is a <b>paragraph.</b></p>
+
+    <p>This is a <strong>paragraph.</strong></p>
+
+    <p>This is a <i>paragraph.</i></p>
+
+    <p>This is a <em>paragraph.</em></p>
+
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul><br>
+
+    <ol>
+        <li>Item 4</li>
+        <li>Item 5</li>
+        <li>Item 6</li>
+    </ol><br>
+
+    <table>
+        <tr> 
+            <th>Title 1</th>
+            <th>Title 2</th>
+            <th>Title 3</th>
+        </tr>
+        <tr> 
+            <td>Item 1</td>
+            <td>Item 2</td>
+            <td>Item 3</td>
+        </tr>
+    </table><br><br>
+
+    <img src="assets/dog.jpg" alt="This is a dog"><br><br>
+
+    <form action="/register" method="post">
+        <!-- Name (field) -->
+        <label for="fullname">Full Name:</label>
+        <input type="text" name="fullname" placeholder= "Enter your name" id="fullname" required><br><br>
+
+        <!-- Email address (fiel) -->
+        <label for="emailaddress">Email address:</label>
+        <input type="text" name="emailaddress" placeholder= "Enter your email" id="emailaddress" required><br><br>
+
+        <!-- Date of Birth (calendar) -->
+        <label for="dob">Date of birth:</label>
+        <input type="date" name="dob"  id="dob" required><br><br>
+
+        <!-- Gender (radio button) -->
+        <label>Gender:</label><br>
+        <label><input type="radio" name="gender" id="female" value="female" required>Female</label><br>
+        <label><input type="radio" name="gender" id="male" value="male" required>Male</label><br>
+        <label><input type="radio" name="gender" id="other" value="other" required>Other</label><br>
+        <label><input type="radio" name="gender" id="prefer-not-to-say" value="prefer-not-to-say" required>Prefer not to say</label><br><br>
+    
+        <!-- Color (pick color) -->
+        <label for="favcolor">Favorite color:</label>
+        <input type="color" name="favcolor"  id="favcolor" value="#FF0000"><br><br>
+
+        <!-- Musci (dropdown) -->
+        <label for="musicgenre">Favourite genre of music:</label><br>
+        <select id="musicgenre" name="musicgenre">
+            <option value="rock">Rock</option>
+            <option value="pop">Pop</option>
+            <option value="jazz">Jazz</option>
+            <option value="hiphop">Hip Hop</option>
+            <option value="classical">Clásica</option>
+            <option value="electronic">Electrónica</option>
+            <option value="reggae">Reggae</option>
+            <option value="blues">Blues</option>
+        </select><br><br>
+
+        <!-- Volume (range) -->
+        <label for="volume">Volume level:</label>
+        <input type="range" id="volume" name="volume" min="0" max="10" value="8" step="1"/><br><br>
+        
+        <!-- Volume (progress bar) -->
+        <label for="volume">Your progress:</label>
+        <meter id="Volume" min="1" max="10" low="2" high="9" optimum="5" value="8">at 8/10</meter><br><br>
+
+        <!-- Volume (checkbox) -->
+        <input type="checkbox" id="acceptConditions" name="acceptConditions" required>
+        <label for="acceptConditions">I accept the terms and conditions</label><br><br>
+
+        <!-- Volume (button) -->
+        <button type="button">Submit</button>
+
+        <!-- Para validar el color (validator.w3.org) -->
+
+    </form>
+
+    <video controls autoplay loop muted width="500">
+        <source src="assets/video-park.mp4" type="video/mp4" />
+    </video>
+      
+</body>
+</html>
+
